@@ -1,0 +1,97 @@
+/* ── Skills Section ── */
+.skills {
+    padding: 5rem 12% !important;
+}
+
+.skills-row-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+.skills-row-3col .skills-block { margin-bottom: 0; }
+
+.skills-block {
+    margin: 0 0 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 1rem;
+    padding: 1.8rem 2rem;
+}
+
+.skills-block:last-child { margin-bottom: 0; }
+
+.skills-section-title {
+    font-size: 1.3rem;
+    color: var(--text-heading);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+/* ── Soft skills ── */
+.soft-skills-grid { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+
+.soft-skill-tag {
+    background: var(--soft-skill-bg);
+    border: 1px solid var(--soft-skill-border);
+    color: var(--soft-skill-color);
+    padding: 0.45rem 1rem;
+    border-radius: 2rem;
+    font-size: .9rem;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.soft-skill-tag:hover {
+    background: var(--soft-skill-hover-bg);
+    border-color: var(--accent);
+    color: var(--soft-skill-hover-color);
+    transform: translateY(-2px);
+}
+
+/* ── Tech icon grid ── */
+.tech-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 1.1rem;
+}
+
+.tech-icon-card {
+    background: var(--tech-card-bg);
+    border: 1px solid var(--tech-card-border);
+    border-radius: 1rem;
+    padding: 1.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tech-icon-card svg,
+.tech-icon-card img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.tech-icon-label {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+}
+
+.tech-icon-card:hover {
+    background: var(--tech-card-hover-bg);
+    border-color: var(--tech-card-hover-border);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--tech-card-hover-shadow);
+}
+
+.tech-icon-card:hover svg { transform: scale(1.12); }
