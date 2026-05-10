@@ -93,9 +93,10 @@
     const uInv   = gl.getUniformLocation(prog, 'uInvert');
 
     function applyTheme() {
-        const isLight = document.body.classList.contains('theme-light');
-        gl.uniform1f(uHue,   isLight ? 200 : 20);
-        gl.uniform1f(uInv,   isLight ? 1.0 : 0.0);
+    const isLight = document.body.classList.contains('theme-light');
+    canvas.style.display = isLight ? 'none' : 'block';
+    gl.uniform1f(uHue, 20);
+    gl.uniform1f(uInv, 0.0);
     }
 
     gl.uniform1f(uNoise, 0.015);

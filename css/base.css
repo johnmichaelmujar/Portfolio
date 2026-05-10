@@ -65,7 +65,7 @@ section:not(.hero) h2::after {
     pointer-events: none;
 }
 
-body.theme-light #darkveil-canvas  { display: block; }
+body.theme-light #darkveil-canvas  { display: none; }
 body.theme-light #lightveil-canvas { display: none; }
 
 /* ── Footer ── */
